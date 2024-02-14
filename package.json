@@ -4,7 +4,7 @@
   "description": "NatCrafty server official bot",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node .",
+    "start": "npx ts-node .",
     "dev": "nodemon ."
   },
   "repository": {

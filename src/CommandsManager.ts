@@ -1,7 +1,7 @@
 import { Collection, REST, Routes, SlashCommandBuilder } from "discord.js";
 import * as fs from "fs";
 import * as path from "path";
-import { token } from "../tokens.json";
+import { token, clientId } from "../tokens.json";
 
 export type commands_collection = Collection<
   string,
