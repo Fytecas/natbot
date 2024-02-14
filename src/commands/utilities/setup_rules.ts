@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder, PermissionFlagsBits } from "discord.js"
+import { SlashCommandBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder, PermissionFlagsBits, ComponentType } from "discord.js"
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -25,16 +25,16 @@ module.exports = {
             ephemeral: true
         })
 
-        const confirmation = await response.awaitMessageComponent();
+        const collector = response.createMessageComponentCollector({ componentType: ComponentType.Button})
 
-        if (confirmation.customId === 'confirm') {
-            if (!confirmation.member.roles.cache.has('1184801643838058556')) {
-                confirmation.member.roles.add('1184801643838058556');
-                await confirmation.reply({ content: `Bienvenue sur le serveur ! :smiley: `, components: [], ephemeral: true });
-            } else {
-                await confirmation.reply({ content: `Tu as déjà accepté le règlement non ? `, components: [], ephemeral: true });
+
+        collector.on("collect", async i => {
+            if (!i.member.roles.cache.has('1184801643838058556')) {
+                    i.member.roles.add('1184801643838058556');
+                    await i.reply({ content: `Bienvenue sur le serveur ! :smiley: `, components: [], ephemeral: true });
+                } else {
+                    await i.reply({ content: `Tu as déjà accepté le règlement non ? `, components: [], ephemeral: true });
             }
-            
-        }
+        })
     },
 }

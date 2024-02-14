@@ -2,7 +2,7 @@ import { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } fr
 import tokens from "../tokens.json"
 import { commands_collection, register_commands } from "./CommandsManager";
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] })
+export const client = new Client({ intents: [GatewayIntentBits.Guilds] })
 
 let commands: commands_collection
 
