@@ -14,7 +14,7 @@ Pour utilisation ajouter le fichier tokens.json:
 ### Instalation
 Assurez vous d'avoir installé [Node](https://nodejs.org/en) au préalable.
 
-Ouverz une invite de commandes dans le dossier ou vous voulez le mettre.
+Ouvrez une invite de commandes dans le dossier ou vous voulez le mettre.
 
 Clonez le dépot avec `git clone https://github.com/Fytecas/natbot.git`.
 
