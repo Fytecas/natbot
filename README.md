@@ -28,3 +28,6 @@ Avant de le démarrer, assurez vous de bien avoir mis le fichier `tokens.json`.
 
 pour le démarrer, éxecutez `npm start`
 
+### Mise à jour
+
+Pour mettre à jour le bot, ouvrez une invite de commande dans son dossier et éxecutez `git pull`
