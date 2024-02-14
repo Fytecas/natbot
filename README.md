@@ -11,5 +11,4 @@ Pour utilisation ajouter le fichier tokens.json:
 ## Utilisation
 
 ### Instalation
-Assurez vous d'avoir installé [Node](https://duckduckgo.com) au préalable.
-
+Assurez vous d'avoir installé [Node](https://nodejs.org/en) au préalable.
