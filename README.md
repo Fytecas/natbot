@@ -1,6 +1,6 @@
 # NatBot
 
-Bot officiel pur le serveur NatCrafty.
+Bot officiel du serveur discord de NatCrafty.
 Pour utilisation ajouter le fichier tokens.json:
 ```json
 {
