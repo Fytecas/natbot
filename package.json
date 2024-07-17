@@ -24,7 +24,7 @@
   "homepage": "https://github.com/Fytecas/natbot#readme",
   "dependencies": {
     "discord-api-types": "^0.37.83",
-    "discord.js": "^14.14.1",
+    "discord.js": "^14.15.3",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
